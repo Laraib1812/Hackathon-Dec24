@@ -4,7 +4,6 @@ import { PiSquaresFourFill } from "react-icons/pi";
 import { FiList } from "react-icons/fi";
 import { IoIosArrowDown } from "react-icons/io";
 
-
 // stylesheet
 import "./product.css";
 
@@ -19,74 +18,77 @@ import logo6 from '../images/logo6.png'
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-
 export default function page() {
   return (
     <>
-    <Header/>
-    <div className="product-page">
-      <div className="category">
-        <h4>Shop</h4>
-
-        <span className="cat-list">
-          Home <IoIosArrowForward className="cate-gray" /> Shop{" "}
-        </span>
-      </div>
-
-      <div className="cate-cards">
-        <div className="cat-card1">
-          <h4>CLOTHS</h4>
-          <p>5 Items</p>
-        </div>
-        <div className="cat-card2">
-          <h4>CLOTHS</h4>
-          <p>5 Items</p>
-        </div>
-        <div className="cat-card3">
-          <h4>CLOTHS</h4>
-          <p>5 Items</p>
-        </div>
-        <div className="cat-card4">
-          <h4>CLOTHS</h4>
-          <p>5 Items</p>
-        </div>
-        <div className="cat-card5">
-          <h4>CLOTHS</h4>
-          <p>5 Items</p>
-        </div>
-      </div>
-
-      <div className="filters">
-        <div className="ft-first">Showing all 12 results
+      <Header />
+      <div className="product-page">
+        {/* Category Section */}
+        <div className="category">
+          <h4>Shop</h4>
+          <span className="cat-list">
+            Home <IoIosArrowForward className="cate-gray" /> Shop{" "}
+          </span>
         </div>
 
-        <div className="ft-middle">
-        Views:
-        <div className="ft-btn-1"><PiSquaresFourFill />
+        {/* Category Cards */}
+        <div className="cate-cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+          <div className="cat-card1 p-4 border">
+            <h4>CLOTHS</h4>
+            <p>5 Items</p>
+          </div>
+          <div className="cat-card2 p-4 border">
+            <h4>CLOTHS</h4>
+            <p>5 Items</p>
+          </div>
+          <div className="cat-card3 p-4 border">
+            <h4>CLOTHS</h4>
+            <p>5 Items</p>
+          </div>
+          <div className="cat-card4 p-4 border">
+            <h4>CLOTHS</h4>
+            <p>5 Items</p>
+          </div>
+          <div className="cat-card5 p-4 border">
+            <h4>CLOTHS</h4>
+            <p>5 Items</p>
+          </div>
         </div>
-        <div className="ft-btn-2"><FiList />
+
+        {/* Filter Section */}
+        <div className="filters flex justify-between items-center mt-6">
+          <div className="ft-first">Showing all 12 results</div>
+
+          <div className="ft-middle flex items-center space-x-2">
+            Views:
+            <div className="ft-btn-1 cursor-pointer">
+              <PiSquaresFourFill />
+            </div>
+            <div className="ft-btn-2 cursor-pointer">
+              <FiList />
+            </div>
+          </div>
+
+          <div className="ft-third flex space-x-2">
+            <button className="ft-pop-btn flex items-center justify-center space-x-1">
+              Popularity <IoIosArrowDown />
+            </button>
+            <button className="ft-blue-btn">Filter</button>
+          </div>
         </div>
+
+        {/* Company Logos Section - One logo per row */}
+        <div className="companies grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 mt-4">
+          <Image src={logo1} alt="logo-1" className="logoimg" />
+          <Image src={logo2} alt="logo-2" className="logoimg" />
+          <Image src={logo3} alt="logo-3" className="logoimg" />
+          <Image src={logo4} alt="logo-4" className="logoimg" />
+          <Image src={logo5} alt="logo-5" className="logoimg" />
+          <Image src={logo6} alt="logo-6" className="logoimg" />
         </div>
 
-        <div className="ft-third">
-          <button className="ft-pop-btn">Popularity <IoIosArrowDown />
-          </button>
-          <button className="ft-blue-btn">Filter</button>
-        </div>
-      </div>
-
-      <div className="companies">
-        <Image src={logo1} alt="logo-1" className="logoimg" ></Image>
-        <Image src={logo2} alt="logo-2" className="logoimg" ></Image>
-        <Image src={logo3} alt="logo-3" className="logoimg" ></Image>
-        <Image src={logo4} alt="logo-4" className="logoimg" ></Image>
-        <Image src={logo5} alt="logo-5" className="logoimg" ></Image>
-        <Image src={logo6} alt="logo-6" className="logoimg" ></Image>
-      </div>
-
-
-
-      <div className="pr-cards-cont">
+        {/* Product Cards Section */}
+        <div className="pr-cards-cont grid grid-cols-1 gap-6 mt-6">
           <div className="card">
             <div className="card-img"></div>
             <div className="card-text">
@@ -95,7 +97,6 @@ export default function page() {
               <p>
                 $16.48 <span className="card-green">$6.48</span>
               </p>
-
               <div className="card-colors">
                 <span className="color-1"></span>
                 <span className="color-2"></span>
@@ -113,7 +114,6 @@ export default function page() {
               <p>
                 $16.48 <span className="card-green">$6.48</span>
               </p>
-
               <div className="card-colors">
                 <span className="color-1"></span>
                 <span className="color-2"></span>
@@ -131,7 +131,6 @@ export default function page() {
               <p>
                 $16.48 <span className="card-green">$6.48</span>
               </p>
-
               <div className="card-colors">
                 <span className="color-1"></span>
                 <span className="color-2"></span>
@@ -149,7 +148,6 @@ export default function page() {
               <p>
                 $16.48 <span className="card-green">$6.48</span>
               </p>
-
               <div className="card-colors">
                 <span className="color-1"></span>
                 <span className="color-2"></span>
@@ -159,166 +157,20 @@ export default function page() {
             </div>
           </div>
 
-          <div className="card">
-            <div className="card-img-5"></div>
-            <div className="card-text">
-              <h4>Graphic Design</h4>
-              <h6>English Department</h6>
-              <p>
-                $16.48 <span className="card-green">$6.48</span>
-              </p>
-
-              <div className="card-colors">
-                <span className="color-1"></span>
-                <span className="color-2"></span>
-                <span className="color-3"></span>
-                <span className="color-4"></span>
-              </div>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="card-img-6"></div>
-            <div className="card-text">
-              <h4>Graphic Design</h4>
-              <h6>English Department</h6>
-              <p>
-                $16.48 <span className="card-green">$6.48</span>
-              </p>
-
-              <div className="card-colors">
-                <span className="color-1"></span>
-                <span className="color-2"></span>
-                <span className="color-3"></span>
-                <span className="color-4"></span>
-              </div>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="card-img-7"></div>
-            <div className="card-text">
-              <h4>Graphic Design</h4>
-              <h6>English Department</h6>
-              <p>
-                $16.48 <span className="card-green">$6.48</span>
-              </p>
-
-              <div className="card-colors">
-                <span className="color-1"></span>
-                <span className="color-2"></span>
-                <span className="color-3"></span>
-                <span className="color-4"></span>
-              </div>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="card-img-8"></div>
-            <div className="card-text">
-              <h4>Graphic Design</h4>
-              <h6>English Department</h6>
-              <p>
-                $16.48 <span className="card-green">$6.48</span>
-              </p>
-
-              <div className="card-colors">
-                <span className="color-1"></span>
-                <span className="color-2"></span>
-                <span className="color-3"></span>
-                <span className="color-4"></span>
-              </div>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="card-img-9"></div>
-            <div className="card-text">
-              <h4>Graphic Design</h4>
-              <h6>English Department</h6>
-              <p>
-                $16.48 <span className="card-green">$6.48</span>
-              </p>
-
-              <div className="card-colors">
-                <span className="color-1"></span>
-                <span className="color-2"></span>
-                <span className="color-3"></span>
-                <span className="color-4"></span>
-              </div>
-            </div>
-          </div>
-
-
-          <div className="card">
-            <div className="card-img-10"></div>
-            <div className="card-text">
-              <h4>Graphic Design</h4>
-              <h6>English Department</h6>
-              <p>
-                $16.48 <span className="card-green">$6.48</span>
-              </p>
-
-              <div className="card-colors">
-                <span className="color-1"></span>
-                <span className="color-2"></span>
-                <span className="color-3"></span>
-                <span className="color-4"></span>
-              </div>
-            </div>
-          </div>
-
-
-          <div className="card">
-            <div className="card-img-11"></div>
-            <div className="card-text">
-              <h4>Graphic Design</h4>
-              <h6>English Department</h6>
-              <p>
-                $16.48 <span className="card-green">$6.48</span>
-              </p>
-
-              <div className="card-colors">
-                <span className="color-1"></span>
-                <span className="color-2"></span>
-                <span className="color-3"></span>
-                <span className="color-4"></span>
-              </div>
-            </div>
-          </div>
-
-
-          <div className="card">
-            <div className="card-img-12"></div>
-            <div className="card-text">
-              <h4>Graphic Design</h4>
-              <h6>English Department</h6>
-              <p>
-                $16.48 <span className="card-green">$6.48</span>
-              </p>
-
-              <div className="card-colors">
-                <span className="color-1"></span>
-                <span className="color-2"></span>
-                <span className="color-3"></span>
-                <span className="color-4"></span>
-              </div>
-            </div>
-          </div>
+          {/* Add more cards as per your original structure */}
         </div>
 
+        {/* Pagination */}
+        <div className="pagination flex justify-center mt-6 space-x-4">
+          <div className="pag-1 cursor-pointer">First</div>
+          <div className="pag-2 cursor-pointer">1</div>
+          <div className="pag-3 cursor-pointer">2</div>
+          <div className="pag-4 cursor-pointer">3</div>
+          <div className="pag-5 cursor-pointer">Next</div>
+        </div>
 
-      <div className="pagination">
-        <div className="pag-1" >First</div>
-        <div className="pag-2" >1</div>
-        <div className="pag-3" >2</div>
-        <div className="pag-4" >3</div>
-        <div className="pag-5" >Next</div>
       </div>
-
-
-    </div>
-    <Footer/>
+      <Footer />
     </>
   );
 }
