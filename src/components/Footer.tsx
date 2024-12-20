@@ -9,7 +9,7 @@ const Footer = () => {
       </div>
 
       {/* Middle Section */}
-      <div className="bg-white w-full flex flex-wrap justify-around py-6">
+      <div className="bg-white w-full grid grid-cols-1 sm:grid sm:grid-cols-5 justify-around py-6">
         {/* Column 1 */}
         <div className="w-1/2 sm:w-auto px-4">
           <h3 className="font-semibold text-gray-800">Company Info</h3>

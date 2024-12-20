@@ -15,8 +15,8 @@ import logo3 from '../images/logo3.png'
 import logo4 from '../images/logo4.png'
 import logo5 from '../images/logo5.png'
 import logo6 from '../images/logo6.png'
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
 
 export default function page() {
   return (

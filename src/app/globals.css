@@ -16,19 +16,7 @@
   --large-fontsize: 4rem;
 }
 
-.home-hero {
-  width: 100%;
-  height: 80vh;
-  background-image: url(./images/shop-hero-1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 10rem;
-  margin-bottom: 5rem;
-}
+
 
 .hometext span {
   color: white;
