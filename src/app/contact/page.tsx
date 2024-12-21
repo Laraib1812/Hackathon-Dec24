@@ -1,11 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
-import ContactImg from "/Users/A.R Computer's/Desktop/Hackathon Dec-2024/E-commerce web/src/app/images/ContactImg.png"
-import Phone from "/Users/A.R Computer's/Desktop/Hackathon Dec-2024/E-commerce web/src/app/images/Phone.png"
-import Location from "/Users/A.R Computer's/Desktop/Hackathon Dec-2024/E-commerce web/src/app/images/Location.png"
-import Mail from "/Users/A.R Computer's/Desktop/Hackathon Dec-2024/E-commerce web/src/app/images/Mail.png"
-import arrow from "/Users/A.R Computer's/Desktop/Hackathon Dec-2024/E-commerce web/src/app/images/arrow.png"
+import ContactImg from "@/app/images/ContactImg.png"
+import Phone from "@/app/images/Phone.png"
+import Location from "@/app/images/Location.png"
+import Mail from "@/app/images/Mail.png"
+import arrow from "@/app/images/arrow.png"
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Button from '@/components/Button'
