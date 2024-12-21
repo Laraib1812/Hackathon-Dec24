@@ -73,7 +73,7 @@ const Contact = () => {
         </div>
         <div className="flex justify-center items-center flex-col gap-10">
           <Image src={arrow} alt="arrow" />
-          <span className="text-main font-bold text-xs lg:text-base">WE Can't WAIT TO MEET YOU</span>
+          <span className="text-main font-bold text-xs lg:text-base">WE Can&apos;t WAIT TO MEET YOU</span>
           <h2 className="font-bold text-main lg:text-[40px] text-3xl w-fit">Let&apos;s Talk</h2>
         </div>
       </div>
