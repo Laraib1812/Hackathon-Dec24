@@ -272,52 +272,83 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="fourth-section">
-        <div className="fourth-text">
-          <span>SUMMER 2020</span>
-          <h1>Vita Classic Product</h1>
-          <p>
+      <div className="w-full relative bg-[#23856D] rounded-[5px] py-[80px] flex justify-center">
+      <div className="w-[90%] max-w-[1440px] flex flex-col lg:flex-row gap-[30px] items-center">
+        {/* Text Section */}
+        <div className="lg:w-1/2 flex flex-col gap-[20px] text-center lg:text-left">
+          <h4 className="font-Montserrat font-normal text-[20px] text-white">
+            SUMMER 2020
+          </h4>
+          <h1 className="font-Montserrat font-bold text-[36px] lg:text-[58px] leading-[40px] lg:leading-[80px] text-white">
+            Vita Classic Product
+          </h1>
+          <p className="font-Montserrat font-medium text-[14px] leading-[20px] text-white">
             We know how large objects will act, We know how are objects will
             act, We know
           </p>
-          <div className="fourth-btns">
-            <button className="four-price-btn">$16.48</button>
-            <button className="four-cart-btn">
-              ADD TO CART <IoIosArrowForward />
+          <div className="flex flex-col lg:flex-row gap-[15px] items-center lg:items-start">
+            <h3 className="font-Montserrat font-bold text-[24px] text-white">
+              $16.48
+            </h3>
+            <button className="rounded-[5px] bg-[#2DC071] py-[10px] px-[20px]">
+              <h1 className="font-Montserrat text-[14px] text-white">
+                ADD TO CART
+              </h1>
             </button>
           </div>
         </div>
-        <div className="fourth-image">
-          <Image
-            className="personimg"
-            src={Personimg}
-            alt="person-image"
-          ></Image>
-        </div>
-      </div>
 
-      <div className="fifth-section">
-        <div className="fifth-image">
-          <Image
-            className="secperson"
-            src={SecPersonimg}
-            alt="person-image"
-          ></Image>
-        </div>
-
-        <div className="fifth-text">
-          <span>SUMMER 2020</span>
-          <h1>Part of the Neural Universe</h1>
-          <p>
-            We know how large objects will act, but things on a small scale.
-          </p>
-
-          <div className="fifth-btns">
-            <button className="fifth-price-btn">BUY NOW</button>
-            <button className="fifth-cart-btn">READ MORE </button>
+        {/* Image Section */}
+        <div className="lg:w-1/2 flex justify-center lg:justify-end">
+          <div className="w-[70%] lg:w-[510px]">
+            <Image
+              src={Personimg}
+              alt="picman"
+              className="w-full h-auto object-contain"
+            />
           </div>
         </div>
       </div>
+    </div>
+
+    <div className="relative w-full h-auto">
+      <div className="w-full max-w-[1440px] flex flex-col lg:flex-row gap-[30px] px-4 lg:px-0">
+        {/* Image Section */}
+        <div className="relative w-full lg:w-[707px] h-[400px] lg:h-[682px] flex justify-center">
+          <Image
+            src={SecPersonimg}
+            alt="couple"
+            className="object-cover"
+            style={{ width: "100%", height: "100%" }}
+          />
+        </div>
+
+        {/* Text Section */}
+        <div className="w-full lg:w-[573px] h-auto flex flex-col gap-[20px] justify-center items-center lg:items-start text-center lg:text-left mt-[20px] lg:mt-0">
+          <h5 className="text-[14px] lg:text-[16px] font-Montserrat font-bold leading-[24px] text-[#BDBDBD]">
+            SUMMER 2020
+          </h5>
+          <h2 className="lg:w-[375px] text-[24px] lg:text-[40px] font-Montserrat font-bold leading-[32px] lg:leading-[50px] text-[#252B42]">
+            Part of the Neural Universe
+          </h2>
+          <h4 className=" lg:w-[375px] text-[16px] lg:text-[20px] font-Montserrat font-normal leading-[24px] lg:leading-[30px] text-[#737373]">
+            We know how large objects will act, but things on a small scale.
+          </h4>
+          <div className="flex flex-wrap justify-center lg:justify-start gap-[10px]">
+            <button className="w-[140px] lg:w-[156px] h-[52px] rounded-[5px] py-[12px] px-[20px] lg:px-[40px] bg-[#2DC071] flex justify-center items-center">
+              <h1 className="text-[14px] font-Montserrat font-bold text-white">
+                BUY NOW
+              </h1>
+            </button>
+            <button className="w-[140px] lg:w-[156px] h-[52px] rounded-[5px] py-[12px] px-[20px] lg:px-[40px] border border-[#2DC071] flex justify-center items-center">
+              <h1 className="text-[14px] font-Montserrat font-bold whitespace-nowrap text-[#2DC071]">
+                READ MORE
+              </h1>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
       <div className="sixth-section">
         <div className='text-center pb-16'>

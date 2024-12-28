@@ -124,8 +124,8 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[#23A6F0] transition-all">
-                  Blog
+                <Link href="/pricing" className="hover:text-[#23A6F0] transition-all">
+                  Pricing
                 </Link>
               </li>
               <li>
@@ -156,7 +156,7 @@ const Header = () => {
         >
           <ul className="flex flex-col gap-6 p-4 text-[20px] text-[#737373] text-center">
             <li>
-              <Link href="#" className="hover:text-[#23A6F0] transition-all">
+              <Link href="/" className="hover:text-[#23A6F0] transition-all">
                 Home
               </Link>
             </li>
@@ -167,10 +167,18 @@ const Header = () => {
             </li>
             <li>
               <Link
-                href="/about"
+                href="/pricing"
                 className="hover:text-[#23A6F0] transition-all"
               >
                 Pricing
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/about"
+                className="hover:text-[#23A6F0] transition-all"
+              >
+                About
               </Link>
             </li>
             <li>

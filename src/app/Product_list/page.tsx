@@ -1,176 +1,179 @@
-// icons
-import { IoIosArrowForward } from "react-icons/io";
-import { PiSquaresFourFill } from "react-icons/pi";
-import { FiList } from "react-icons/fi";
-import { IoIosArrowDown } from "react-icons/io";
-
-// stylesheet
-import "./product.css";
-
-// images
 import Image from "next/image";
-import logo1 from '../images/logo1.png'
-import logo2 from '../images/logo2.png'
-import logo3 from '../images/logo3.png'
-import logo4 from '../images/logo4.png'
-import logo5 from '../images/logo5.png'
-import logo6 from '../images/logo6.png'
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
+import Header from "@/components/Header";
+import arrow from "@/app/imagesTwo/Vector (13).png";
+import cat1 from "@/app/imagesTwo/card-item.png";
+import cat2 from "@/app/imagesTwo/card-item (1).png";
+import cat3 from "@/app/imagesTwo/card-item (2).png";
+import cat4 from "@/app/imagesTwo/card-item (3).png";
+import cat5 from "@/app/imagesTwo/card-item (4).png";
+import drop from "@/app/imagesTwo/Vector (14).png";
+import frame from "@/images/Frame 31.png";
+import clients from "@/app/imagesTwo/desktop-clients-1.png";
+import pic9 from "@/app/imagesTwo/product-cover-5 (8).png";
+import pic10 from "@/app/imagesTwo/product-cover-5 (9).png";
+import pic11 from "@/app/imagesTwo/product-cover-5 (10).png";
+import pic12 from "@/app/imagesTwo/product-cover-5 (11).png";
+import pic13 from "@/app/imagesTwo/product-cover-5 (12).png";
+import pic14 from "@/app/imagesTwo/product-cover-5 (13).png";
+import pic15 from "@/app/imagesTwo/product-cover-5 (14).png";
+import pic16 from "@/app/imagesTwo/product-cover-5 (15).png";
+import pic17 from "@/app/imagesTwo/product-cover-5 (16).png";
+import pic18 from "@/app/imagesTwo/product-cover-5 (17).png";
+import pic19 from "@/app/imagesTwo/product-cover-5 (18).png";
+import pic20 from "@/app/imagesTwo/product-cover-5 (19).png";
 
-export default function page() {
+import CardText from "@/components/Card";
+import Footer from "@/components/Footer";
+
+export default function () {
   return (
-    <>
+    <div>
       <Header />
-      <div className="product-page">
-        {/* Category Section */}
-        <div className="category">
-          <h4>Shop</h4>
-          <span className="cat-list">
-            Home <IoIosArrowForward className="cate-gray" /> Shop{" "}
-          </span>
-        </div>
-
-        {/* Category Cards */}
-        <div className="cate-cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-          <div className="cat-card1 p-4 border">
-            <h4>CLOTHS</h4>
-            <p>5 Items</p>
+      {/* Shop Section */}
+      <div className="w-full h-[92px]  flex flex-col items-center mt-[10px]">
+        <div className="w-full max-w-screen-xl flex gap-4 items-center py-[40px]">
+          {/* Shop Title */}
+          <div className="w-full h-[32px] flex justify-center items-center mb-[8px]">
+            <h2 className="font-Montserrat font-bold text-[24px] leading-[32px] text-[#252B42]">
+              Shop
+            </h2>
           </div>
-          <div className="cat-card2 p-4 border">
-            <h4>CLOTHS</h4>
-            <p>5 Items</p>
-          </div>
-          <div className="cat-card3 p-4 border">
-            <h4>CLOTHS</h4>
-            <p>5 Items</p>
-          </div>
-          <div className="cat-card4 p-4 border">
-            <h4>CLOTHS</h4>
-            <p>5 Items</p>
-          </div>
-          <div className="cat-card5 p-4 border">
-            <h4>CLOTHS</h4>
-            <p>5 Items</p>
-          </div>
-        </div>
-
-        {/* Filter Section */}
-        <div className="filters flex justify-between items-center mt-6">
-          <div className="ft-first">Showing all 12 results</div>
-
-          <div className="ft-middle flex items-center space-x-2">
-            Views:
-            <div className="ft-btn-1 cursor-pointer">
-              <PiSquaresFourFill />
-            </div>
-            <div className="ft-btn-2 cursor-pointer">
-              <FiList />
+          {/* Breadcrumb */}
+          <div className="w-full h-[44px] flex justify-center items-center gap-[5px]">
+            <div className="flex items-center gap-[15px]">
+              <div className="font-Montserrat font-bold text-[14px] leading-[24px] text-[#252B42]">
+                Home
+              </div>
+              <Image src={arrow} alt="arrow" width={8.26} height={6} />
+              <h6 className="font-Montserrat font-bold text-[14px] leading-[24px] text-[#BDBDBD]">
+                Shop
+              </h6>
             </div>
           </div>
+        </div>
+      </div>
+      {/* Category Section */}
+      <div className="w-full bg-[#FAFAFA] py-8">
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 ml-[90px] lg:ml-[70px]">
+          <Image
+            src={cat1}
+            alt="1"
+            className="w-[60%] md:w-full lg:w-full"
+          />
+          <Image
+            src={cat2}
+            alt="2"
+            className="w-[60%] md:w-full lg:w-full"
+          />
+          <Image
+            src={cat3}
+            alt="3"
+            className="w-[60%] md:w-full lg:w-full"
+          />
+          <Image
+            src={cat4}
+            alt="4"
+            className="w-[60%] md:w-full lg:w-full"
+          />
+          <Image
+            src={cat5}
+            alt="5"
+            className="w-[60%] md:w-full lg:w-full"
+          />
+        </div>
+      </div>
 
-          <div className="ft-third flex space-x-2">
-            <button className="ft-pop-btn flex items-center justify-center space-x-1">
-              Popularity <IoIosArrowDown />
+      {/* Popularity Section */}
+      <div className="w-full h-[98px] flex justify-center items-center mt-12">
+        <div className="w-full max-w-screen-xl flex justify-between items-center py-[24px] px-4">
+          <div className="font-montserrat font-bold text-[14px] leading-[24px] text-[#737373]">
+            Showing all 12 results
+          </div>
+          <div className="flex gap-4 items-center">
+            <button className="w-[141px] h-[50px] border border-[#DDDDDD] flex items-center justify-center relative">
+              <p className="font-Montserrat text-[14px] leading-[28px] text-[#737373]">
+                Popularity
+              </p>
+              <Image
+                src={drop}
+                alt="drop"
+                className="absolute top-[10px] left-[10px]"
+              />
             </button>
-            <button className="ft-blue-btn">Filter</button>
+            <button className="w-[94px] h-[50px] flex justify-center items-center bg-[#23A6F0]">
+              <h6 className="font-Montserrat font-bold text-[14px] leading-[24px] text-white">
+                Filter
+              </h6>
+            </button>
           </div>
         </div>
+      </div>
 
-        {/* Company Logos Section - One logo per row */}
-        <div className="companies grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 mt-4">
-          <Image src={logo1} alt="logo-1" className="logoimg" />
-          <Image src={logo2} alt="logo-2" className="logoimg" />
-          <Image src={logo3} alt="logo-3" className="logoimg" />
-          <Image src={logo4} alt="logo-4" className="logoimg" />
-          <Image src={logo5} alt="logo-5" className="logoimg" />
-          <Image src={logo6} alt="logo-6" className="logoimg" />
-        </div>
-
-        {/* Product Cards Section */}
-        <div className="pr-cards-cont grid grid-cols-1 gap-6 mt-6">
-          <div className="card">
-            <div className="card-img"></div>
-            <div className="card-text">
-              <h4>Graphic Design</h4>
-              <h6>English Department</h6>
-              <p>
-                $16.48 <span className="card-green">$6.48</span>
-              </p>
-              <div className="card-colors">
-                <span className="color-1"></span>
-                <span className="color-2"></span>
-                <span className="color-3"></span>
-                <span className="color-4"></span>
+      {/* Clients Section */}
+      <div className="relative mt-12">
+        <Image src={clients} alt="clients" className="w-full" />
+      </div>
+      {/* Product Cards */}
+      <div className="relative w-full px-4 py-12">
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {[
+            pic9,
+            pic10,
+            pic11,
+            pic12,
+            pic13,
+            pic14,
+            pic15,
+            pic16,
+            pic17,
+            pic18,
+            pic19,
+            pic20,
+          ].map((pic, index) => (
+            <div
+              key={index}
+              className="w-full max-w-[238px] mx-auto mb-8 flex flex-col items-center"
+            >
+              <div className="w-[239px] h-[auto] flex flex-col">
+                <div className="flex-grow">
+                  <Image
+                    src={pic}
+                    alt={`product ${index + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="">
+                  <CardText />
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className="card">
-            <div className="card-img-2"></div>
-            <div className="card-text">
-              <h4>Graphic Design</h4>
-              <h6>English Department</h6>
-              <p>
-                $16.48 <span className="card-green">$6.48</span>
-              </p>
-              <div className="card-colors">
-                <span className="color-1"></span>
-                <span className="color-2"></span>
-                <span className="color-3"></span>
-                <span className="color-4"></span>
-              </div>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="card-img-3"></div>
-            <div className="card-text">
-              <h4>Graphic Design</h4>
-              <h6>English Department</h6>
-              <p>
-                $16.48 <span className="card-green">$6.48</span>
-              </p>
-              <div className="card-colors">
-                <span className="color-1"></span>
-                <span className="color-2"></span>
-                <span className="color-3"></span>
-                <span className="color-4"></span>
-              </div>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="card-img-4"></div>
-            <div className="card-text">
-              <h4>Graphic Design</h4>
-              <h6>English Department</h6>
-              <p>
-                $16.48 <span className="card-green">$6.48</span>
-              </p>
-              <div className="card-colors">
-                <span className="color-1"></span>
-                <span className="color-2"></span>
-                <span className="color-3"></span>
-                <span className="color-4"></span>
-              </div>
-            </div>
-          </div>
-
-          {/* Add more cards as per your original structure */}
+          ))}
         </div>
 
         {/* Pagination */}
-        <div className="pagination flex justify-center mt-6 space-x-4">
-          <div className="pag-1 cursor-pointer">First</div>
-          <div className="pag-2 cursor-pointer">1</div>
-          <div className="pag-3 cursor-pointer">2</div>
-          <div className="pag-4 cursor-pointer">3</div>
-          <div className="pag-5 cursor-pointer">Next</div>
+        <div className="w-full max-w-[313px] mx-auto mt-[100px] border border-gray-300 rounded-lg shadow-md">
+          <div className="flex items-center justify-center space-x-2">
+            <div className="bg-gray-100 text-gray-600 font-extrabold py-2 px-4 border border-gray-300 rounded-l-md shadow-md cursor-pointer">
+              First
+            </div>
+            <div className="bg-white text-blue-600 py-2 px-3 border border-gray-300 shadow-md cursor-pointer">
+              1
+            </div>
+            <div className="bg-blue-600 text-white py-2 px-3 border border-gray-300 shadow-md cursor-pointer">
+              2
+            </div>
+            <div className="bg-white text-blue-600 py-2 px-3 border border-gray-300 shadow-md cursor-pointer">
+              3
+            </div>
+            <div className="bg-white text-blue-600 py-2 px-4 border border-gray-300 rounded-r-md shadow-md cursor-pointer">
+              Next
+            </div>
+          </div>
         </div>
-
       </div>
+
+      {/* Footer */}
       <Footer />
-    </>
+    </div>
   );
 }
