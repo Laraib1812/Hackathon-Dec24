@@ -201,7 +201,7 @@ const PricingPage = () => {
               ))}
             </div>
 
-            <h6 className="text-gray-600 text-center">Haven't got your answer? Contact our support</h6>
+            <h6 className="text-gray-600 text-center">Haven&apos;t got your answer? Contact our support</h6>
           </div>
 
           {/* TRIAL SECTION */}

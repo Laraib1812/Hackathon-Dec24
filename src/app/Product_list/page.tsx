@@ -25,7 +25,7 @@ import pic20 from "@/app/imagesTwo/product-cover-5 (19).png";
 import CardText from "@/components/Card";
 import Footer from "@/components/Footer";
 
-export default function () {
+const ProductList = () => {
   return (
     <div>
       <Header />
@@ -177,3 +177,5 @@ export default function () {
     </div>
   );
 }
+
+export default ProductList;
